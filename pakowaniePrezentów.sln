@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pakowaniePrezentów", "pakowaniePrezentów\pakowaniePrezentów.csproj", "{427F15E2-7E3B-4D2D-A9C9-3E73B043EC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427F15E2-7E3B-4D2D-A9C9-3E73B043EC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427F15E2-7E3B-4D2D-A9C9-3E73B043EC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427F15E2-7E3B-4D2D-A9C9-3E73B043EC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427F15E2-7E3B-4D2D-A9C9-3E73B043EC58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B6B7092-189D-40AE-A8C9-40E99976C626}
+	EndGlobalSection
+EndGlobal
