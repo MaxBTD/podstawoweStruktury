@@ -1,4 +1,6 @@
-﻿namespace pakowaniePrezentów
+﻿using System.Reflection.Metadata;
+
+namespace pakowaniePrezentów
 {
     internal class Program
     {
@@ -82,15 +84,36 @@
 
         static private List<double> pierwiastki(int a, int b, int c)
         {
-            return new List<double>();
+            List<double> pierwiastki = new List<double>();
+            double delta = Math.Pow(b, 2) - (4 * a * c);
+            if(delta > 0)
+            {
+                pierwiastki.Add((-b - Math.Sqrt(delta)) / (2*a));
+                pierwiastki.Add((-b + Math.Sqrt(delta)) / (2 * a));
+            } else if (delta == 0)
+            {
+                pierwiastki.Add((-b / (2 * a)));
+            }
+
+            return pierwiastki;
         }
 
         static void Main(string[] args)
         {
-            List<int> x = liczbPierwsze(32);
-            for(int i = 0; i < x.Count()-1; i++)
+            int.TryParse(Console.ReadLine(), out int a);
+            int.TryParse(Console.ReadLine(), out int b);
+            int.TryParse(Console.ReadLine(), out int c);
+
+            List<double> pierwiastk = pierwiastki(a, b, c);
+            if (pierwiastk.Count == 0)
+                Console.WriteLine("Brak pierwiastków");
+            else if(pierwiastk.Count == 1)
             {
-                Console.WriteLine(x[i]);
+                Console.WriteLine($"Pierwiastki: x = {pierwiastk[0]}");
+            }
+            else
+            {
+                Console.WriteLine($"Pierwiastki: x1 = {pierwiastk[0]}, x2 = {pierwiastk[1]}");
             }
         }
     }
